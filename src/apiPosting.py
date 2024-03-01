@@ -112,7 +112,7 @@ def prepare_text_to_post(name: str, location: str, title: str, text: str, hashta
         raise FuncException from err
     
     
-async def register_image() -> tuple():
+async def register_image() -> tuple:
     try:
         api_url, headers, request_body = get_request_data(f'{FILES_FOLDER}/schema_request_register_image.json')
         
